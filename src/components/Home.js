@@ -24,6 +24,7 @@ const Home = (props) => {
     let trending = [];
 
     const moviesCollection = collection(db, "movies");
+    console.log(moviesCollection);
 
     onSnapshot(moviesCollection, (snapshot) => {
       snapshot.docs.forEach((doc) => {
